@@ -21,7 +21,7 @@ parameters:
   - name: agent_pool
     type: object
     default:
-      name: 'ci-agent-pool'
+      name: 'Default' #'ci-agent-pool'
 
   - name: variable_group_name
     type: string
