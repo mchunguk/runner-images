@@ -19,7 +19,7 @@ foreach ($module in $modules) {
             Install-Module -Name $moduleName -RequiredVersion $version -Scope AllUsers -SkipPublisherCheck -Force
         }
     } else {
-        Install-Module -Name $moduleName -Scope AllUsers -SkipPublisherCheck -Force
+        Install-Module -Name $moduleName -Scope AllUsers -SkipPublisherCheck -Force -AllowClobber
     }
 }
 
