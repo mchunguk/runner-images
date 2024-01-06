@@ -54,6 +54,7 @@ packer build    -var "client_id=$ClientId" `
                 -var "virtual_network_name=$VirtualNetworkName" `
                 -var "virtual_network_resource_group_name=$VirtualNetworkRG" `
                 -var "virtual_network_subnet_name=$VirtualNetworkSubnet" `
+                -var "private_virtual_network_with_public_ip": true `
                 -color=false `
                 $TemplatePath `
         | Where-Object {
