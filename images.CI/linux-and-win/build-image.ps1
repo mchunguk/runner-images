@@ -22,6 +22,8 @@ if (-not (Test-Path $TemplatePath))
 $ImageTemplateName = [io.path]::GetFileName($TemplatePath).Split(".")[0]
 $InstallPassword = [System.GUID]::NewGuid().ToString().ToUpper()
 
+Write-Host "Packer InstallPassword: " + $InstallPassword
+
 $SensitiveData = @(
     'OSType',
     'StorageAccountLocation',
